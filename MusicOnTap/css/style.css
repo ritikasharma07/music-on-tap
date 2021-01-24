@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:  linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    z-index: 1;
+}
+
+body{
+    font-family: cursive;
+}
+h1{
+    border: 5px solid black;
+    border-radius: 40%;
+    padding: 20px 10px;
+    background-color: rgb(150, 122, 122);
+    opacity: 0.6;
+    color: black;
+}
+p{
+    color: black;
+    text-decoration: underline;
+}
+.pads{
+    cursor:grab;
+}
+
+img{
+    display: flex;
+    float:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0.6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.5, 20), 4px 6px 20px 4px rgba(0, 0, 0.5, 32);
+}
+
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0px 30px 0px ;
+    text-align: center;
+}
+.pads{
+    width: 100%;
+    display: flex;
+}
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+.pad1{
+    background: rgb(45, 2, 63); 
+    border: 2px solid black;
+    border-radius: 20%;
+}
+.pad1:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pad2{
+    background: rgb(95, 7, 7);
+    border: 2px solid black;
+    border-radius: 20%; 
+}
+.pad2:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pad3{
+    background: rgb(5, 70, 5) ;
+    border: 2px solid black; 
+    border-radius: 20%;
+}
+.pad3:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pad4{
+    background: rgb(85, 4, 67) ;
+    border: 2px solid black; 
+    border-radius: 20%;
+}
+.pad4:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pad5{
+    background: rgb(202, 69, 16);
+    border: 2px solid black; 
+    border-radius: 20%;
+}
+.pad5:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.pad6{
+    background: rgb(146, 137, 7);
+    border: 2px solid black; 
+    border-radius: 20%;
+}
+.pad6:active {
+    opacity: 0.2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 80%;
+        left: 60%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
